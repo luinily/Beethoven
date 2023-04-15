@@ -21,7 +21,6 @@
 		D5843EE71DBD2FAA0077F86E /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5843EE51DBD2FAA0077F86E /* EstimationFactory.swift */; };
 		D5843EE81DBD2FAA0077F86E /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5843EE61DBD2FAA0077F86E /* EstimationStrategy.swift */; };
 		D5843EEC1DBD34AD0077F86E /* BufferSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5843EEA1DBD34680077F86E /* BufferSpec.swift */; };
-		D59CB1571C345E0A00290B63 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB1371C345E0A00290B63 /* Config.swift */; };
 		D59CB1591C345E0A00290B63 /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB13B1C345E0A00290B63 /* EstimationError.swift */; };
 		D59CB15C1C345E0A00290B63 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB13E1C345E0A00290B63 /* Estimator.swift */; };
 		D59CB15D1C345E0A00290B63 /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB13F1C345E0A00290B63 /* LocationEstimator.swift */; };
@@ -32,7 +31,6 @@
 		D59CB1621C345E0A00290B63 /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB1451C345E0A00290B63 /* QuadradicEstimator.swift */; };
 		D59CB1631C345E0A00290B63 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB1461C345E0A00290B63 /* QuinnsFirstEstimator.swift */; };
 		D59CB1641C345E0A00290B63 /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB1471C345E0A00290B63 /* QuinnsSecondEstimator.swift */; };
-		D59CB1661C345E0A00290B63 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB14A1C345E0A00290B63 /* PitchEngine.swift */; };
 		D59CB1671C345E0A00290B63 /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB14C1C345E0A00290B63 /* SignalTracker.swift */; };
 		D59CB1681C345E0A00290B63 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB14E1C345E0A00290B63 /* InputSignalTracker.swift */; };
 		D59CB1691C345E0A00290B63 /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CB14F1C345E0A00290B63 /* OutputSignalTracker.swift */; };
@@ -53,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3984B31529EAE96D005ACB48 /* BeethovenPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BeethovenPackage; sourceTree = "<group>"; };
 		AF3190511DABE01600C897CA /* YINTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = YINTransformer.swift; sourceTree = "<group>"; tabWidth = 2; };
 		AFFF3FF01DB633B4004AD9D9 /* YINEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YINEstimator.swift; sourceTree = "<group>"; };
 		D51575AB1C343B77006F8E75 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +69,6 @@
 		D5843EE51DBD2FAA0077F86E /* EstimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationFactory.swift; sourceTree = "<group>"; };
 		D5843EE61DBD2FAA0077F86E /* EstimationStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationStrategy.swift; sourceTree = "<group>"; };
 		D5843EEA1DBD34680077F86E /* BufferSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferSpec.swift; sourceTree = "<group>"; };
-		D59CB1371C345E0A00290B63 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D59CB13B1C345E0A00290B63 /* EstimationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimationError.swift; sourceTree = "<group>"; };
 		D59CB13E1C345E0A00290B63 /* Estimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estimator.swift; sourceTree = "<group>"; };
 		D59CB13F1C345E0A00290B63 /* LocationEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEstimator.swift; sourceTree = "<group>"; };
@@ -81,16 +79,12 @@
 		D59CB1451C345E0A00290B63 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadradicEstimator.swift; sourceTree = "<group>"; };
 		D59CB1461C345E0A00290B63 /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
 		D59CB1471C345E0A00290B63 /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
-		D59CB14A1C345E0A00290B63 /* PitchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchEngine.swift; sourceTree = "<group>"; };
 		D59CB14C1C345E0A00290B63 /* SignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalTracker.swift; sourceTree = "<group>"; };
 		D59CB14E1C345E0A00290B63 /* InputSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSignalTracker.swift; sourceTree = "<group>"; };
 		D59CB14F1C345E0A00290B63 /* OutputSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputSignalTracker.swift; sourceTree = "<group>"; };
 		D59CB1521C345E0A00290B63 /* FFTTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFTTransformer.swift; sourceTree = "<group>"; };
 		D59CB1531C345E0A00290B63 /* SimpleTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTransformer.swift; sourceTree = "<group>"; };
 		D59CB1541C345E0A00290B63 /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
-		D5A49C731C343EC300427BF8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		D5A49C741C343EC300427BF8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		D5A49CDD1C3458EA00427BF8 /* Pitchy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pitchy.framework; path = Carthage/Build/iOS/Pitchy.framework; sourceTree = "<group>"; };
 		E0BF88FC1E85C31A00079F64 /* SimulatorSignalTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulatorSignalTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +110,7 @@
 		D51575A11C343B77006F8E75 = {
 			isa = PBXGroup;
 			children = (
-				D55C01F41DBD1F8100575260 /* Frameworks */,
+				3984B31529EAE96D005ACB48 /* BeethovenPackage */,
 				D51575AC1C343B77006F8E75 /* Products */,
 				D55C02031DBD210600575260 /* Project */,
 				D59CB1361C345E0A00290B63 /* Source */,
@@ -133,16 +127,6 @@
 				D51575B51C343B77006F8E75 /* Beethoven-iOS-Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D55C01F41DBD1F8100575260 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D5A49C731C343EC300427BF8 /* Quick.framework */,
-				D5A49C741C343EC300427BF8 /* Nimble.framework */,
-				D5A49CDD1C3458EA00427BF8 /* Pitchy.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D55C01F51DBD210600575260 /* Tests */ = {
@@ -236,8 +220,6 @@
 		D59CB1361C345E0A00290B63 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D59CB1371C345E0A00290B63 /* Config.swift */,
-				D59CB14A1C345E0A00290B63 /* PitchEngine.swift */,
 				D59CB13A1C345E0A00290B63 /* Estimation */,
 				D5843EDD1DBD2CF50077F86E /* Library */,
 				D59CB14B1C345E0A00290B63 /* SignalTracking */,
@@ -434,7 +416,6 @@
 				AFFF3FF11DB633B4004AD9D9 /* YINEstimator.swift in Sources */,
 				D59CB1671C345E0A00290B63 /* SignalTracker.swift in Sources */,
 				D59CB16C1C345E0A00290B63 /* Transformer.swift in Sources */,
-				D59CB1661C345E0A00290B63 /* PitchEngine.swift in Sources */,
 				D59CB1691C345E0A00290B63 /* OutputSignalTracker.swift in Sources */,
 				D5843EE41DBD2D290077F86E /* YINUtil.swift in Sources */,
 				D59CB1611C345E0A00290B63 /* MaxValueEstimator.swift in Sources */,
@@ -442,7 +423,6 @@
 				E0BF88FD1E85C31A00079F64 /* SimulatorSignalTracker.swift in Sources */,
 				D59CB16B1C345E0A00290B63 /* SimpleTransformer.swift in Sources */,
 				D5843EE21DBD2D110077F86E /* Array+Extensions.swift in Sources */,
-				D59CB1571C345E0A00290B63 /* Config.swift in Sources */,
 				D59CB1681C345E0A00290B63 /* InputSignalTracker.swift in Sources */,
 				AF3190521DABE01600C897CA /* YINTransformer.swift in Sources */,
 				D5843EDF1DBD2CF50077F86E /* Buffer.swift in Sources */,
