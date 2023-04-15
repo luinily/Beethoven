@@ -1,5 +1,5 @@
 import XCTest
-@testable import BeethovenPackage
+@testable import Beethoven
 
 final class BeethovenTests: XCTestCase {
     func testExample() throws {
