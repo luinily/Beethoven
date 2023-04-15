@@ -251,32 +251,14 @@ estimation algorithm, adopted by @glaurent, and it appears to be quite accurate
 in the pitch detection of electric and acoustic guitar strings.
 
 ## Installation
-
-**Beethoven** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'Beethoven'
-```
-
-**Beethoven** is also available through [Carthage](https://github.com/Carthage/Carthage).
-To install just write into your Cartfile:
-
-```ruby
-github "vadymmarkov/Beethoven"
-```
-
-**Beethoven** can also be installed manually. Just download and drop `Sources`
-folders in your project.
-
-## Components
-
-**Beethoven** uses [Pitchy](https://github.com/vadymmarkov/Pitchy) library to
-get a music pitch with note, octave and offsets from a specified frequency.
+Using Xcode, you can add Beethoven using the Swift Package Manager.
 
 ## Author
 
-Vadym Markov, markov.vadym@gmail.com
+This is a library made by Vadym Markov, markov.vadym@gmail.com
+original repository: https://github.com/vadymmarkov/Beethoven
+
+Forked by Yoann Coldefy, so it can compile in swift 5 and be added with SPM
 
 ## Contributing
 
