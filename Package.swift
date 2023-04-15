@@ -13,4 +13,4 @@ let package = Package(
                     resources: [.copy("TestResources/")]
                    ),
     ]
-}
+)
