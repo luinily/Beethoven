@@ -1,9 +1,8 @@
 import UIKit
 import AVFoundation
-import Pitchy
 
 public protocol PitchEngineDelegate: AnyObject {
-  func pitchEngine(_ pitchEngine: PitchEngine, didReceivePitch pitch: Pitch)
+  func pitchEngine(_ pitchEngine: PitchEngine, didReceiveFrequence frequence: Double)
   func pitchEngine(_ pitchEngine: PitchEngine, didReceiveError error: Error)
   func pitchEngineWentBelowLevelThreshold(_ pitchEngine: PitchEngine)
 }
@@ -134,11 +133,10 @@ extension PitchEngine: SignalTrackerDelegate {
           let frequency = try self.estimator.estimateFrequency(
             sampleRate: Float(time.sampleRate),
             buffer: transformedBuffer)
-          let pitch = try Pitch(frequency: Double(frequency))
 
           DispatchQueue.main.async { [weak self] in
             guard let `self` = self else { return }
-            self.delegate?.pitchEngine(self, didReceivePitch: pitch)
+            self.delegate?.pitchEngine(self, didReceiveFrequence: Double(frequency))
           }
         } catch {
           DispatchQueue.main.async { [weak self] in
